@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="products" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/products.jsp" />
+    </definition>
+
+    <definition name="details" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/details.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+     <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Giỏ hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp" />
+    </definition>
+    <definition name="account-permission" extends="baseLayout">
+        <put-attribute name="title" value="Duyệt Nhà hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/account-permission.jsp" />
+    </definition>
+    <definition name="restaurant" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ nhà hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant.jsp" />
+    </definition>
+    <definition name="restaurant-add-post" extends="baseLayout">  
+        <put-attribute name="title" value="Đăng bài" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-add-post.jsp" />
+    </definition>
+    <definition name="access-denied" extends="baseLayout">
+        <put-attribute name="title" value="Tài khoản chưa kích hoạt" />
+        <put-attribute name="content" value="/WEB-INF/jsp/access-denied.jsp" />
+    </definition>
+    <definition name="restaurant-management" extends="baseLayout">
+        <put-attribute name="title" value="Trang quản lý bài viết" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-management.jsp" />
+    </definition>
+    <definition name="restaurant-confirm-order" extends="baseLayout">
+        <put-attribute name="title" value="Xác nhận đơn hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-confirm-order.jsp" />
+    </definition>
+    <definition name="restaurant-confirm-product" extends="baseLayout">
+        <put-attribute name="title" value="Trạng thái sản phẩm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-confirm-product.jsp" />
+    </definition>
+    <definition name="userStats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/userStats.jsp" />
+    </definition>
+    <definition name="stats-revenue" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/stats-revenue.jsp" />
+    </definition>
+    <definition name="stats-cate" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/stats-cate.jsp" />
+    </definition>
+    <definition name="admin-account" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-account.jsp" />
+    </definition>
+    <definition name="view-account" extends="baseLayout">
+        <put-attribute name="title" value="Xem thông tin tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/view-account.jsp" />
+    </definition>
+    <definition name="add-account" extends="baseLayout">
+        <put-attribute name="title" value="Thêm tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/add-account.jsp" />
+    </definition>
+    <definition name="admin-product-post" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý bài viết" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-product-post.jsp" />
+    </definition>
+    <definition name="view-product-post" extends="baseLayout">
+        <put-attribute name="title" value="Xem thông tin tin bài viết" />
+        <put-attribute name="content" value="/WEB-INF/jsp/view-product-post.jsp" />
+    </definition>
+    <definition name="add-product-post" extends="baseLayout">
+        <put-attribute name="title" value="Thêm bài viết" />
+        <put-attribute name="content" value="/WEB-INF/jsp/add-product-post.jsp" />
+    </definition>
+    <definition name="restaurant-view-post" extends="baseLayout">
+        <put-attribute name="title" value="Xem thông tin nhà hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-view-post.jsp" />
+    </definition>
+    <definition name="restaurant-view-order" extends="baseLayout">
+    <put-attribute name="title" value="Xem thông tin đơn hàng" />
+    <put-attribute name="content" value="/WEB-INF/jsp/restaurant-view-order.jsp" />
+    </definition>
+    <definition name="restaurant-order" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý đơn hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-order.jsp" />
+    </definition>
+
+    <definition name="restaurant-add-info-account" extends="baseLayout">
+        <put-attribute name="title" value="Thêm thông tin nhà hàng " />
+        <put-attribute name="content" value="/WEB-INF/jsp/restaurant-add-info-account.jsp" />
+    </definition>
+    <definition name="info-account-view" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin nhà hàng " />
+        <put-attribute name="content" value="/WEB-INF/jsp/info-account-view.jsp" />
+    </definition>
+    <definition name="admin-manage-category" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý danh mục " />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-manage-category.jsp" />
+    </definition>
+    <definition name="add-category" extends="baseLayout">
+        <put-attribute name="title" value="Thêm danh mục" />
+        <put-attribute name="content" value="/WEB-INF/jsp/add-category.jsp" />
+    </definition>
+    <definition name="stats-userRole" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê theo loại tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats-userRole.jsp" />
+    </definition>
+    <definition name="stats-product" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê sản phẩm theo tháng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats-product.jsp" />
+    </definition>
+</tiles-definitions>
+ 

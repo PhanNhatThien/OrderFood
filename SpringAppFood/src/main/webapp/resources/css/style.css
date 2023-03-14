@@ -1,0 +1,340 @@
+body {
+    font-family: none, serif;
+}
+div.container.header{
+    width:80%;
+}
+.container.content-body{
+    width:80%;
+}
+div.content-body{
+    margin-top:7%;
+}
+
+/* CSS sidebar */
+section.sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    margin-right: 2em;
+}
+section.sidebar > ul > li > a > i{
+    border: 1px solid #f7682d;
+    color:white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #f7682d;
+    transition: transform 0.5s;
+}
+section.sidebar > ul > li:nth-child(even) > a > i{
+    background-color:#1dab8a;
+    border: 1px solid #1dab8a;
+}
+/* section.sidebar > ul > li > a#gototop {
+    display:none;
+} */
+section.sidebar{
+    position:fixed;
+    top: 30%;
+    right:0%;
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+}
+
+section.sidebar > ul > li > a > i:hover{
+    transform: scale(1.2);
+}
+
+/* CSS banner */
+div.carousel-item img{
+    width:100%
+}
+div.carousel.slide{
+    position: relative;
+    margin-top: 2%;
+}
+
+div.carousel-item div.book{
+    display:flex;
+}
+div.books_banner {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+div.book_banner > div{
+    border-radius: 5px;
+}
+
+span.control-left{
+    border: 1px solid black;;
+    background-color:black;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left:10px;
+}
+span.control-right{
+    border: 1px solid black;;
+    background-color:black;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right:10px;
+}
+
+
+div.splide__slide > div.cart{
+    padding:0px;
+}
+
+/*css food */
+div.card:hover div.detail-buy{
+    bottom:0;
+    background-color: rgba(0, 0,0, 0.3);
+
+
+}
+
+
+div.detail-buy input:first-child{
+   margin-bottom: 5%;
+   border:1px solid #f2f4f3;
+   border-radius: 5%;
+   background: linear-gradient(#f2f4f3,#d6d7db);
+}
+
+div.bt-buy{
+    position:absolute;
+    top:40%;
+    left:30%;
+}
+div.detail-buy{
+    position: absolute;
+    top: 0;
+    bottom:100%;
+    margin: 0%;
+    left:0;
+    right: 0;
+    transition: bottom 1s;
+    overflow: hidden;
+}
+
+
+
+
+/* CSS footer */
+footer{
+    background: #1dab8a;
+    padding-left: 5px;
+    margin-top: 300px;
+
+}
+
+
+div.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+div.head div.pay{
+    display: flex;
+}
+div.head div.pays {
+    width: 50%;
+    padding-right: 1em;
+}
+img.img-pay{
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+div.head div.app {
+    display: flex;
+}
+div.head div.apps{
+    width: 25%;
+    padding: 0 1em;
+}
+img.img-app{
+    width: 100%;
+}
+div > h4.foot{
+    color:white;
+}
+
+div.head div.connection{
+    display: flex;
+}
+div.head div.connections{
+    width: 25%;
+    padding-left: 1em;
+}
+img.img-connection{
+    width: 70%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+
+
+/*css header*/
+div.header{
+    position:fixed;
+    z-index:100;
+    top:0;
+    width:100%;
+    left:0;
+}
+
+
+div.header.container{
+    padding: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar.navbar-expand-lg.sticky{
+    margin:0;
+    padding:0;
+    border-bottom: 5px solid #d6d7db;
+}
+.navbar.navbar-expand-lg.sticky div.container-fluid{
+    background-color: #d271ea;
+}
+
+
+
+ul.support {
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.support li a{
+    color: white;
+    text-decoration :none;
+}
+div.info-footer h6{
+    color: white;
+}
+div.infos-footer{
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-around;
+}
+
+div.info-footer{
+    padding-right: 1em;
+}
+
+
+
+.btn {
+  padding: .45rem 1.5rem .35rem;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #c471f5;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1))
+}
+
+
+/* CSS logo-move */
+div.logo-move{
+    padding:0;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+section.container > div > h3{
+    margin-top: 5%;
+}
+div.logo-move > img{
+    animation: move 20s infinite;
+    position: relative;
+    width:148px;
+    height:71px;
+}
+
+@keyframes move{
+    from{
+        left: -100%;
+    }
+    to{
+        left:100%;
+    }
+}
+
+div.logo-move-head{
+    padding:0;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+div.logo-move-head h5{
+    animation: movehead 20s infinite;
+    position: relative;
+}
+
+@keyframes movehead{
+    from{
+        left: 0%;
+    }
+    to{
+        left:100%;
+    }
+}
+
+
+
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position:relative;
+ }
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+ }
+ .MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+  }
+ .MultiCarousel .MultiCarousel-inner .item > div {
+    text-align: center;
+    padding:10px; margin:10px;
+    background:#f1f1f1; color:#666;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position:absolute;
+    border-radius:50%;
+    top:calc(50% - 20px);
+}
+.MultiCarousel .leftLst {
+    left:0; }
+.MultiCarousel .rightLst {
+    right:0; }
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background:#ccc;
+}
